@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=JetBrains+Mono:wght@300;400&family=Liu+Jian+Mao+Cao&family=Long+Cang&family=Ma+Shan+Zheng&family=Noto+Sans+HK:wght@300&family=Noto+Sans:wght@300&family=PT+Sans+Narrow:wght@700&family=Urbanist:wght@100;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Urbanist',thin;
+}
+.niubi{
+    font-family: 'Urbanist',sans-serif;
+    color: white;
+}
