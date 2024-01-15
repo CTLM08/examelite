@@ -68,20 +68,22 @@ const Navbar = () => {
             placeholder="search categories"
           />
         </div>
-        <div className="h-96 overflow-hidden overflow-y-auto w-full mt-7 flex flex-col gap-5">
-          {arr.map((item) => (
-            <div>
-              <div className="flex-row justify-between flex  ">
-                <div className="flex flex-row gap-3">
-                  <Icon icon={item.icon} className="w-6 h-6 text-white" />
-                  <p>{item.name}</p>
+        <>
+          <div className="h-96 overflow-hidden overflow-y-auto w-full mt-7 flex flex-col gap-5">
+            {arr.map((item) => (
+              <div>
+                <div className="flex-row justify-between flex  ">
+                  <div className="flex flex-row gap-3">
+                    <Icon icon={item.icon} className="w-6 h-6 text-white" />
+                    <p>{item.name}</p>
+                  </div>
+                  <p className="mr-2">{item.amount}</p>
                 </div>
-                <p className="mr-2">{item.amount}</p>
+                <hr className="mt-1" />
               </div>
-              <hr className="mt-1" />
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </>
       </div>
       <div className="w-full flex flex-col  gap-3">
         <button className="flex w-full flex-row  justify-between">
